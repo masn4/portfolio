@@ -7,6 +7,7 @@ const Projects = () => (
           {
             title: 'Pomodoro App',
             description: 'A productivity timer for focused work sessions.',
+            link: 'https://pomodoro-app-nine-rose.vercel.app/',
           },
         ].map((project, index) => (
           <div
@@ -16,7 +17,7 @@ const Projects = () => (
             <h3 className='text-xl font-bold text-white'>{project.title}</h3>
             <p className='text-gray-400 mt-2'>{project.description}</p>
             <a
-              href='#'
+              href={project.link}
               className='text-blue-500 hover:text-blue-400 mt-4 inline-block transition'
             >
               View Details →
